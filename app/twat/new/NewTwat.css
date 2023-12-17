@@ -1,0 +1,49 @@
+.NewTwatContainer {
+  /* border: 1px solid white; */
+  background-color: rgba(69, 69, 69, 0.696);
+  border-radius: 20px;
+  width: 50%;
+  position: absolute;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+.Form {
+  /* border: 1px solid white; */
+  width: 80%;
+}
+
+.InputContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  /* width: 50%; */
+}
+
+.Label {
+  /* border: 1px solid blue; */
+  padding: 5px;
+  font-size: 18px;
+}
+
+.Input {
+  /* border: 1px solid red; */
+  height: 2rem;
+  font-size: 1.5rem;
+}
+
+.Submit {
+  height: 3rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.Submit:hover {
+  cursor: pointer;
+}

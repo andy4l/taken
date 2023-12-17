@@ -15,7 +15,7 @@ const page = () => {
 
   console.log(twat);
 
-  return twat ? { twat } : <div>loading...</div>;
+  return twat ? <div>{twat}</div> : <div>loading...</div>;
 };
 
 export default page;
