@@ -11,11 +11,16 @@ datasource db {
 }
 
 model Twat {
-  id Int @id @default(autoincrement())
-  date DateTime @unique
-  title String
-  intro String
-  featuredRaid String
-  featuredNightfall String 
-  featuredGuardian String
+  id                    Int      @id @default(autoincrement())
+  date                  DateTime @unique
+  title                 String
+  intro                 String
+  featuredRaid          String
+  featuredDungeon       String   @default("")
+  featuredNightfall     String
+  featuredGuardian      String
+  nextFeaturedRaid      String   @default("")
+  nextFeaturedDungeon   String   @default("")
+  nextFeaturedNightfall String   @default("")
+  nextFeaturedGuardian  String   @default("")
 }

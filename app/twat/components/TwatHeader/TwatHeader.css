@@ -1,6 +1,6 @@
 .TwatHeaderContainer {
-    border: 1px solid white;
-    height: 500px;
+    /* border: 1px solid white; */
+    /* height: 500px; */
     overflow: hidden;
 }
 
@@ -15,6 +15,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
+}
+
+
+.HeaderPictureContainer{
+    /* border: 1px solid red; */
+    width: 100vw;
+    display: flex;
+    /* flex-direction: column; */
+    /* min-width: 1000px; */
+    align-items: center;
+    justify-items: center;
+    height:400px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .HeaderImage {

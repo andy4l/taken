@@ -1,0 +1,22 @@
+.TwatContainer{
+    /* border: 1px solid red; */
+    width: 70%;
+    min-width: 980px;
+}
+
+.TwatTitleBar{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2.5rem;
+    height: 4rem;
+}
+
+@media (max-width: 1000px) {
+    /* Styles to be applied when viewport width is 1000px or less */
+    .TwatContainer {
+        min-width: 0px;
+      width: 98%
+    }
+  }
