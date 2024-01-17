@@ -4,7 +4,7 @@ import TwatHeader from "./components/TwatHeader/TwatHeader";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "TWAT",
+  title: "This Week at TAK≡N",
   description: "This Week at Taken",
 };
 

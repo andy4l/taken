@@ -1,3 +1,9 @@
+/*
+  Warnings:
+
+  - You are about to drop the column `nextFeaturedGuardian` on the `Twat` table. All the data in the column will be lost.
+
+*/
 -- RedefineTables
 PRAGMA foreign_keys=OFF;
 CREATE TABLE "new_Twat" (
@@ -11,9 +17,9 @@ CREATE TABLE "new_Twat" (
     "featuredGuardian" TEXT NOT NULL,
     "nextFeaturedRaid" TEXT NOT NULL DEFAULT '',
     "nextFeaturedDungeon" TEXT NOT NULL DEFAULT '',
-    "nextFeaturedNightfall" TEXT NOT NULL DEFAULT '',
+    "nextFeaturedNightfall" TEXT NOT NULL DEFAULT ''
 );
-INSERT INTO "new_Twat" ("date", "featuredGuardian", "featuredNightfall", "featuredRaid", "id", "intro", "title") SELECT "date", "featuredGuardian", "featuredNightfall", "featuredRaid", "id", "intro", "title" FROM "Twat";
+INSERT INTO "new_Twat" ("date", "featuredDungeon", "featuredGuardian", "featuredNightfall", "featuredRaid", "id", "intro", "nextFeaturedDungeon", "nextFeaturedNightfall", "nextFeaturedRaid", "title") SELECT "date", "featuredDungeon", "featuredGuardian", "featuredNightfall", "featuredRaid", "id", "intro", "nextFeaturedDungeon", "nextFeaturedNightfall", "nextFeaturedRaid", "title" FROM "Twat";
 DROP TABLE "Twat";
 ALTER TABLE "new_Twat" RENAME TO "Twat";
 CREATE UNIQUE INDEX "Twat_date_key" ON "Twat"("date");

@@ -29,8 +29,12 @@ export async function POST(request) {
       title,
       intro,
       featuredRaid,
+      featuredDungeon,
       featuredNightfall,
       featuredGuardian,
+      nextFeaturedRaid,
+      nextFeaturedDungeon,
+      nextFeaturedNightfall,
     } = body;
 
     if (
@@ -38,8 +42,12 @@ export async function POST(request) {
       !title ||
       !intro ||
       !featuredRaid ||
+      !featuredDungeon ||
       !featuredNightfall ||
-      !featuredGuardian
+      !featuredGuardian ||
+      !nextFeaturedRaid ||
+      !nextFeaturedDungeon ||
+      !nextFeaturedNightfall
     ) {
       return NextResponse.json(
         { error: "Missing body parameters" },
@@ -68,8 +76,12 @@ export async function POST(request) {
         title: title,
         intro: intro,
         featuredRaid: featuredRaid,
+        featuredDungeon: featuredDungeon,
         featuredNightfall: featuredNightfall,
         featuredGuardian: featuredGuardian,
+        nextFeaturedRaid: nextFeaturedRaid,
+        nextFeaturedDungeon: nextFeaturedDungeon,
+        nextFeaturedNightfall: nextFeaturedNightfall,
       },
     });
 

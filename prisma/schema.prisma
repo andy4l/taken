@@ -22,5 +22,4 @@ model Twat {
   nextFeaturedRaid      String   @default("")
   nextFeaturedDungeon   String   @default("")
   nextFeaturedNightfall String   @default("")
-  nextFeaturedGuardian  String   @default("")
 }
