@@ -1,5 +1,9 @@
 "use client";
 import "./Twat.css";
+import lastwish from "../twat/images/lastwish.jpg";
+import duality from "../twat/images/duality.jpg";
+import vile from "../twat/images/vile.jpg";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const Page = () => {
@@ -28,19 +32,46 @@ const Page = () => {
           <p>{twat.intro}</p>
         </div>
         <br></br>
-        <div className="NextFeaturedRaid">
-          <h2>NEXT FEATURED RAID</h2>
-          <p>{twat.nextFeaturedRaid}</p>
-        </div>
-        <br></br>
-        <div className="NextFeaturedDungeon">
-          <h2>NEXT FEATURED DUNGEON</h2>
-          <p>{twat.nextFeaturedDungeon}</p>
-        </div>
-        <br></br>
-        <div className="NextFeaturedNightfall">
-          <h2>NEXT FEATURED NIGHTFALL</h2>
-          <p>{twat.nextFeaturedNightfall}</p>
+        <div className="columnContainer">
+          <div className="column">
+            <div className="NextFeaturedRaid">
+              <h2>NEXT WEEKS RAID</h2>
+              <Image
+                src={lastwish}
+                width="300"
+                height={"157"}
+                alt={"Header Picture"}
+                className="HeaderImage"
+              />
+              <p>{twat.nextFeaturedRaid}</p>
+            </div>
+          </div>
+          <div className="column">
+            <div className="NextFeaturedDungeon">
+              <h2>NEXT FEATURED DUNGEON</h2>
+              <Image
+                src={duality}
+                width="300"
+                height={"157"}
+                alt={"Header Picture"}
+                className="HeaderImage"
+              />
+              <p>{twat.nextFeaturedDungeon}</p>
+            </div>
+          </div>
+          <div className="column">
+            <div className="NextFeaturedNightfall">
+              <h2>NEXT FEATURED NIGHTFALL</h2>
+              <Image
+                src={vile}
+                width="300"
+                height={"157"}
+                alt={"Header Picture"}
+                className="HeaderImage"
+              />
+              <p>{twat.nextFeaturedNightfall}</p>
+            </div>
+          </div>
         </div>
 
         <div className="TwatFeaturedGuardian">
