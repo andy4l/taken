@@ -19,7 +19,7 @@ const TwatHeader = () => {
           unoptimized
         />
       </div>
-      <div className="Centered">This Week At TAK≡N</div>
+      <div className="centered">This Week At TAK≡N</div>
     </div>
   );
 };
