@@ -1,30 +1,19 @@
 import Link from "next/link";
 import React from "react";
 import "./Navbar.css";
+import NavBarButton from "./components/NavBarButton/NavBarButton";
 
 const Navbar = () => {
   return (
     <div className="HeaderBar">
       <div>TAK☰N</div>
-      <ul>
-        <li>
-          <a href="/home">Home</a>
-        </li>
-        <li>
-          <Link href="/aboutus">
-            <p>About Us</p>
-          </Link>
-        </li>
-        <li>
-          <a href="/twat">TWAT</a>
-        </li>
-        <li>
-          <a href="/members">Clan Members</a>
-        </li>
-        <li>
-          <a href="/store">Store</a>
-        </li>
-      </ul>
+      <div className="NavBarButtons">
+        <NavBarButton label="Home" link="/home" />
+        <NavBarButton label="About Us" link="/aboutus" />
+        <NavBarButton label="TWAT" link="/twat" />
+        <NavBarButton label="Members" link="/members" />
+        <NavBarButton label="Store" link="/store" />
+      </div>
     </div>
   );
 };
