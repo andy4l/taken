@@ -1,21 +1,17 @@
-"use client";
-import { Inter } from "next/font/google";
-import Button from "../components/interactive/Button/Button";
-import react from "react";
 import Navbar from "@/app/components/interactive/Navbar/Navbar";
 import "./AboutUs.css";
-
 import React from "react";
+import StandardLayout from "../layout";
 
 const AboutUs = () => {
   return (
-    <div className="body">
-      <div className="AboutUsContainer">
-        <Navbar />
-        <br></br>
-        <h2>WORK IN PROGRESS</h2>
+    <StandardLayout>
+      <div className="body">
+        <div className="AboutUsContainer">
+          <h2>WORK IN PROGRESS</h2>
+        </div>
       </div>
-    </div>
+    </StandardLayout>
   );
 };
 

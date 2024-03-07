@@ -1,0 +1,42 @@
+
+
+
+.HomepageContainer{
+    /* border: 1px solid red; */
+    width: 80%;
+    min-width: 980px;
+    background-color: rgb(77, 76, 76);
+    color: rgb(39,39,3)9;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-break:normal;
+    white-space: pre-line;
+    overflow: hidden;
+}
+
+
+@media (max-width: 1000px) {
+    /* Styles to be applied when viewport width is 1000px or less */
+    .HomepageContainer {
+        background-color: rgb(77, 76, 76);
+        min-width: 0px;
+      width: 98%
+      
+    }
+  }
+
+  /*
+  .TwatContainer:before {
+    content:"";
+    background-color:rgb(77, 76, 76);
+    position: absolute;
+    height: 50%;
+    width: 4000px;
+    left: -2000px;
+    z-index: -1;
+    
+  }
+  */

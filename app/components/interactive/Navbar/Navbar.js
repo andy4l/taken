@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -7,7 +8,7 @@ const Navbar = () => {
       <div>TAK☰N</div>
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <a href="/home">Home</a>
         </li>
         <li>
           <Link href="/aboutus">
