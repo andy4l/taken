@@ -1,42 +1,45 @@
-
-
-
-.AboutUsContainer{
-    /* border: 1px solid red; */
-    width: 80%;
-    min-width: 980px;
-    background-color: rgb(77, 76, 76);
-    color: white;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    line-break:normal;
-    white-space: pre-line;
-    overflow: hidden;
+.AboutUsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
+.HeaderPictureContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
-@media (max-width: 1000px) {
-    /* Styles to be applied when viewport width is 1000px or less */
-    .AboutUsContainer {
-        background-color: rgb(77, 76, 76);
-        min-width: 0px;
-      width: 98%
-      
-    }
-  }
+.HeaderImage {
+  max-width: 100%;
+  height: auto;
+}
 
-  /*
-  .TwatContainer:before {
-    content:"";
-    background-color:rgb(77, 76, 76);
-    position: absolute;
-    height: 50%;
-    width: 4000px;
-    left: -2000px;
-    z-index: -1;
-    
-  }
-  */
+.BlurbContainer {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-left: 20px; /* Add this line */
+}
+
+.AdminContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.AdminCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-left: 10px; /* Add this line */
+}

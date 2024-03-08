@@ -1,0 +1,52 @@
+.WIPContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .HeaderPictureContainer {
+    /* border: 1px solid red; */
+    width: 100vw;
+    display: flex;
+    /* flex-direction: column; */
+    /* min-width: 1000px; */
+    align-items: center;
+    justify-items: center;
+    height: 400px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align: center;
+    position: relative;
+  }
+  
+  .HeaderImage {
+    /* width: 100%; */
+    width: 100%;
+    height: auto;
+    /* aspect-ratio: auto; */
+  }
+  
+  .centered {
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  
+
+  .HeaderBar {
+    /* border: 1px solid red; */
+    height: 50px;
+    background-color: rgb(40, 39, 39);
+    color: rgb(250, 250, 250);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }

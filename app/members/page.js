@@ -7,7 +7,11 @@ import Navbar from "@/app/components/interactive/Navbar/Navbar";
 import React from "react";
 
 const Members = () => {
-  return <div className="MembersHeaderContainer"> </div>;
+  return (
+    <div className="MembersHeaderContainer">
+      <Navbar />
+    </div>
+  );
 };
 
 export default Members;
