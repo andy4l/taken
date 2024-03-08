@@ -1,22 +1,20 @@
-//** @type {import('next').NextConfig} */
-//const nextConfig = {};
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
 //module.exports = nextConfig;
-/*
-// next.config.js
+
 module.exports = {
   async redirects() {
     return [
       {
-        source: "/:path*",
-        destination: "/WIP",
-        permanent: false,
+        source: "/",
+        destination: "/twat",
+        permanent: true,
       },
     ];
   },
 };
-*/
-
+/*
 module.exports = {
   async redirects() {
     return [
@@ -28,3 +26,4 @@ module.exports = {
     ];
   },
 };
+*/
