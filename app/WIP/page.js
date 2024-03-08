@@ -5,6 +5,11 @@ import Image from "next/image";
 import HeaderPicture from "@/app/twat/images/oryx3.jpg";
 import "./wip.css";
 
+export const metadata = {
+  title: "TAK≡N Work in Progress",
+  description: "WIP Description",
+};
+
 const WIP = () => {
   return (
     <div classname="WIPContainer">
