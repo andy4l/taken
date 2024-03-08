@@ -23,14 +23,14 @@
   
   .HeaderImage {
     /* width: 100%; */
-    width: 100%;
+    max-width: 100%;
     height: auto;
     /* aspect-ratio: auto; */
   }
   
   .centered {
     position: absolute;
-    font-size: 40px;
+    font-size: 4vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
